@@ -1,0 +1,48 @@
+
+
+<div id="left-col">
+	<div id="left_close">
+			<i id="menu-toggle" class="fa fa-caret-left"></i>
+	</div>
+	<div id="left-col-menu">
+		<ul class="sidebar-nav">
+			<li class="sidebar-brand">
+				<a href="#">
+					Flawwboard
+				</a>
+			</li>
+
+			<li>
+				<a href="#" class="sidebar-link">Dashboard</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar-link">Shortcuts</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar-link">Overview</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar-link">Events</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar-link">About</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar-link">Services</a>
+			</li>
+			<li>
+				<a href="#" class="sidebar-link">Contact</a>
+			</li>
+		</ul>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("#menu-toggle").click(function(e) {
+		alert('aaah')
+		e.preventDefault();
+		$("left-col").toggleClass("toggled");
+	});
+
+</script>
