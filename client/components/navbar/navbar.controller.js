@@ -3,7 +3,7 @@
 class NavbarController {
   //start-non-standard
 
-  this.messages=[{
+  messages=[{
     author:'Shakira',
     message: 'Whenever wherever!',
     date: 'Today'

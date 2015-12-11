@@ -10,7 +10,6 @@
  import http from 'http';
 
 // Connect to MongoDB
-console.log(config.mongo.options);
 mongoose.connect(config.mongo.uri, config.mongo.options);
 mongoose.connection.on('error', function(err) {
 	console.error('MongoDB connection error: ' + err);

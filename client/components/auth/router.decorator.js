@@ -11,15 +11,19 @@ angular.module('flawboardApp.auth')
       }
 
       let query = typeof next.authenticate === 'string' ? Auth.hasRole : Auth.isLoggedIn;
-
-      query(1,2).then(good => {
+      if(!Auth.isLoggedIn()){
+        $location.path('/login');
+      }
+     /* query(1,2).then(good => {
         if(!good) {
           event.preventDefault();
+          console.log(good);
           Auth.isLoggedIn().then(is => {
             $location.path(is ? '/' : '/login');
           });
         }
-      });
+      }); */
+
     });    
   });
 
